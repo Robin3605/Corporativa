@@ -240,7 +240,7 @@ footer {
 }
 
 /*responsive*/
-@media(max-width: 768px){
+@media screen and (max-width: 768px){
     .mostrar-menu,
     .esconder-menu {
         display: block;
@@ -257,6 +257,9 @@ footer {
         z-index: 100;
         transition: 0.8s;
     }
+    header {
+        width: auto;
+    }
     .menu a {
         display: block;
         padding: 20px;
@@ -268,6 +271,9 @@ footer {
     }
     #check:checked ~ .menu {
         right: 0;
+    }
+    #banner {
+        width: auto;
     }
     #personas {
         flex-direction: column;
@@ -284,5 +290,58 @@ footer {
     }
     .datos-form {
         flex-direction: column;
+    }
+    #contacto {
+        width: 100%;
+    }
+    #escribenos{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    header{
+        width: auto;
+    }
+    #banner{
+        width: auto;
+    }
+    #personas{
+        width: auto;
+    }
+    #personas{
+        margin: 0;
+        padding: 5px;
+    }
+    #personas img{
+        margin: 0;
+        padding: 0;
+        width: 330px;
+        height: 80vh;
+    }
+    #contacto h4{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    header{
+        width: auto;
+    }
+    #banner{
+        width: auto;
+    }
+    #personas{
+        width: auto;
+    }
+    #personas{
+        margin: 0;
+        padding: 5px;
+    }
+    #personas img{
+        margin: 0;
+        padding: 0;
+        width: 250px;
+        height: 60vh;
     }
 }
